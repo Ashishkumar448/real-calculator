@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&family=Squada+One&display=swap");
+
+:root {
+  /* Panel */
+  --panel-top: #555658;
+  --panel-bottom: #f2f2f2;
+  /* Screen */
+  --screen-bg: #eaecd6;
+  --screen-shadow: #c7c9b3;
+  /* Buttons */
+  --button-bg-r: #ea4c4d;
+  --button-shadow: #cdcdcd;
+  --button: #ffffff;
+}
+
+#header {
+  width: 100%;
+  font-family: "Solway", serif;
+  font-size: 3em;
+  color: #000;
+  text-align: center;
+  margin: 0;
+}
+#header span {
+  color: #ea4c4d;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#calculator {
+  margin-top: 2em;
+  border: 5px solid var(--panel-top);
+  border-radius: 1em;
+  box-shadow: inset 0 0 10px 20px var(--panel-top);
+}
+#panel-top {
+  background-color: var(--panel-top);
+  width: 35em;
+  height: 5em;
+  border-radius: 1em;
+  padding: 1em;
+}
+#screen {
+  background-color: var(--screen-bg);
+  height: 5em;
+  border-radius: 1em;
+  box-shadow: inset 0 0 5px 8px var(--screen-shadow);
+}
+#result {
+  text-align: right;
+  font-size: 4em;
+  padding-top: 0.15em;
+  padding-right: 0.5em;
+}
+#panel-bottom {
+  background-color: var(--panel-bottom);
+  border: 5px solid var(--panel-top);
+  border-radius: 20px;
+  height: 450px;
+}
+#buttons {
+  margin-top: 15px;
+}
+.row {
+  width: 100%;
+}
+#result {
+  font-family: "Squada One", sans-serif;
+}
+.button {
+  display: inline-block;
+  font-family: "Solway", serif;
+  width: 15%;
+  margin: 2% 4.5%;
+  height: 1.5em;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--button);
+  font-weight: 600;
+  border-radius: 10px 10px 30px 30px;
+  background-color: var(--panel-top);
+  box-shadow: 0 0 0px 3px var(--button-shadow);
+}
+.button:hover {
+  box-shadow: 0 0 0px 4.25px var(--button-shadow);
+}
+.button:active {
+  transform: scale(0.9);
+}
+.plus {
+  height: 80px;
+  display: block;
+  margin: -26% 80%;
+  padding: 30px 0;
+}
+.red {
+  background-color: var(--button-bg-r);
+}
